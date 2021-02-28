@@ -67,17 +67,25 @@ ul.action-controls{
     border-radius: 16px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 #upload-button{
+    font-size: 1em;
     background-color: #ea4c89;
     border: 0;
     color: white;
     border-radius: 5px;
-    padding: 15px 10px 15px 10px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+#upload-button:hover{
+    background-color:#ec75a3
 }
 #work-icon{
     width: 25px;
     height: 25px;
+    cursor: pointer;
+
 }
 
 /* cover */
@@ -182,12 +190,12 @@ li a{
 
 /* gallery */
 .gallery{
-    border: 1px solid red;
     width: 88%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2px auto;
-    grid-gap: 50px;
+    column-gap: 50px;
+    row-gap: 65px;
 }
 .gallery div{
     width: 100%;
