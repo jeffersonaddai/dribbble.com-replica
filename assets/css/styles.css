@@ -37,7 +37,6 @@ ul.action-controls{
 .top-nav-control{
     padding-left: 10px;
     padding-right: 10px;
-    width: auto;
 }
 
 #search{
@@ -66,6 +65,8 @@ ul.action-controls{
 }
 #avatar-icon{
     border-radius: 16px;
+    width: 32px;
+    height: 32px;
 }
 #upload-button{
     background-color: #ea4c89;
@@ -73,6 +74,10 @@ ul.action-controls{
     color: white;
     border-radius: 5px;
     padding: 15px 10px 15px 10px;
+}
+#work-icon{
+    width: 25px;
+    height: 25px;
 }
 
 /* cover */
@@ -178,10 +183,19 @@ li a{
 /* gallery */
 .gallery{
     border: 1px solid red;
-    width: 80%;
+    width: 88%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2px auto;
+    grid-gap: 50px;
+}
+.gallery div{
+    width: 100%;
+    
+}
+video, img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 
