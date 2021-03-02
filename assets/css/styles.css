@@ -170,6 +170,7 @@ ul.action-controls{
     outline: none;
 }
 
+
 ul.suggest{
     width: 600px;
     margin: 70px auto;
@@ -188,6 +189,10 @@ li a{
     color: #fd507e;
 }
 
+li a:hover{
+    color:#ec75a3
+}
+
 /* gallery */
 .gallery{
     width: 88%;
@@ -195,11 +200,11 @@ li a{
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2px auto;
     column-gap: 50px;
-    row-gap: 65px;
+    row-gap: 35px;
 }
-.gallery div{
+
+.gallery-wrapper{
     width: 100%;
-    
 }
 video, img{
     width: 100%;
@@ -207,3 +212,126 @@ video, img{
 }
 
 
+.stats{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.user-stats{
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.user-stats .dp-name{
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    cursor: pointer;
+}
+.user-stats .rank{
+    margin-left: 8px;
+    display: flex;
+    text-decoration: none;
+}
+.tag{
+    color: #3d3d4e;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.rank span{
+    padding: 2px 3px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ccc;
+    border-radius: 3px;
+}
+.rank span:hover{
+    background-color: #ec75a3
+}
+.dp-name img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dp-name span{
+    margin-left: 8px;
+    overflow: hidden;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0d0c22;
+    flex: 1;
+}
+.dp-name a{
+    margin-left: 8px;
+    display: flex;
+    text-decoration: none;
+}
+.likes-views{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.likes-stats{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+}
+
+.likes-stats a{
+    display: flex;
+    margin-left: 8px;
+    align-items: center;
+    font-weight: 500;
+}
+.likes-stats a svg:hover{
+    fill: #ec75a3;
+}
+
+.views{
+    display: inline-flex;
+    margin-left: 8px;
+    align-items: center;
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    fill: #9e9ea7;
+    margin-right: 4px;
+}
+#views-icon{
+    width: 16px;
+
+}
+.likes-views svg:hover{
+    fill: #ec75a3;
+}
+.load-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 45px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background-color: #f1efef;    
+}
+.load-more:hover{
+    cursor: pointer;
+    background-color:#dddddd
+}
+.footer{
+    border: 1px solid black;
+    background-color: #f1f0f0;
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+}
