@@ -1,6 +1,8 @@
 /* body */
 body{
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100%;
     margin: 0;
 }
 .container {
@@ -15,9 +17,24 @@ body{
     align-items: center;
     position: relative;
 }
+.mobile-nav{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+.mobile-nav #logo{
+    width: 86px;
+    margin: auto;
+}
+.mobile-nav .menu{
+    width: 40px;
+    height: 100%;
+    display:block;
+}
 ul.parent-controls{
-    font-weight: 600;
-    line-height: 20px;
+    line-height: 10px;
+    font-weight:bolder;
     list-style: none;
     height: 100%;
     padding:0;
@@ -40,9 +57,7 @@ ul.action-controls{
     padding-left: 10px;
     padding-right: 10px;
 }
-#logo a svg:hover{
-    fill: red;
-}
+
 .parent-controls li:hover{
     cursor: pointer;
     color: #ea4c89;
@@ -113,16 +128,17 @@ ul.action-controls{
     text-align: center;
     bottom: 53%;
     left: 24%;
+    right: 24%;
     position: absolute;
     color: white;
 }
 .cover-text h1{
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: 4vw;
+    margin-bottom: 1px;
 }
 
 .cover-text h3{
-    font-size: 1.5em;
+    font-size: 2.5vw;
     margin: 0;
 }
 
@@ -210,11 +226,14 @@ li a:hover{
     column-gap: 50px;
     row-gap: 35px;
 }
-
-.gallery-wrapper{
-    width: 100%;
+.gallery div:hover{
+    cursor: pointer;
+}
+.gallery div img:hover, video:hover{
+    filter: brightness(145%);
 }
 video, img{
+
     width: 100%;
     border-radius: 10px;
 }
@@ -412,7 +431,7 @@ video, img{
     padding-top: 44px;
     padding-bottom: 44px;
     display: grid;
-    grid-template-columns: 3.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     color: #6e6d7a;
 }
 #favicon{
@@ -422,10 +441,10 @@ video, img{
 }
 .right{
     display: flex;
-    align-items: center;
     text-align: right;
     font-weight: 400;
     line-height: 20px;
+    justify-items:end;
 }
 .count{
     color: black;
@@ -441,4 +460,19 @@ video, img{
 }
 .social-media-links svg:hover{
     fill: black;
+}
+@media screen and (max-width: 1318px){
+    #search{
+        display: none;
+    }
+}
+@media screen and (max-width: 1010px){
+    .desktop-top-nav{
+        display: none;
+    }
+}
+@media screen and (min-width: 1010px){
+    .mobile-nav{
+        display: none;
+    }
 }
