@@ -1,6 +1,6 @@
 /* body */
 body{
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
 }
 .container {
@@ -16,6 +16,8 @@ body{
     position: relative;
 }
 ul.parent-controls{
+    font-weight: 600;
+    line-height: 20px;
     list-style: none;
     height: 100%;
     padding:0;
@@ -23,7 +25,7 @@ ul.parent-controls{
 }
 ul li.desktop-nav-control{
     padding: 18px;
-    color: #6e6d7a;
+    color: #828283;
 }
 
 ul.action-controls{
@@ -38,7 +40,13 @@ ul.action-controls{
     padding-left: 10px;
     padding-right: 10px;
 }
-
+#logo a svg:hover{
+    fill: red;
+}
+.parent-controls li:hover{
+    cursor: pointer;
+    color: #ea4c89;
+}
 #search{
     padding: 12px;
     width: 100px;
@@ -129,7 +137,7 @@ ul.action-controls{
     box-shadow: 0px 15px 50px -15px #d4d4d4;
     width: 50%;
     margin: 2px auto;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
     align-items: center;
     padding: 10px;
@@ -329,9 +337,108 @@ video, img{
     background-color:#dddddd
 }
 .footer{
-    border: 1px solid black;
-    background-color: #f1f0f0;
+    margin:0;
+    padding: 100px 1px 100px 100px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #f8f8f8;
+}
+.footer .footer-wrapper{
     width: 100%;
-    height: 500px;
-    margin-top: 200px;
+    display: flex;
+}
+.footer .blocks{
+    width: 184.5px;
+    margin-right: 50px;
+}
+#block1{
+    display: block;
+}
+#footer-logo svg{
+    width: 104px;
+    height: auto;
+    fill: #ea4c89;
+}
+
+.desc{
+    margin: 20px 0px 20px 0px;
+}
+.social-media-links a{
+    text-decoration: none;
+}
+.footer-link{
+    text-decoration: none;
+    width: 100%;
+    margin-top: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #3d3d4e;
+    margin-top: 16px;
+}
+
+.heading{
+    color:#575757;
+    margin-top: 24px;
+    font-weight: 600;
+}
+.no-margin{
+    margin-top: 0;
+}
+#footer-logo-desc{
+    color: #ea4c89
+}
+#advertise{
+    text-decoration: none;
+    color: #9e9ea7;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#advertise-container{
+    margin-top: 10px;
+}
+
+#horizontal{
+    border: 0.2px solid #e7e7e7;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.copyright{
+    padding-top: 44px;
+    padding-bottom: 44px;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    color: #6e6d7a;
+}
+#favicon{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-weight: 400;
+    line-height: 20px;
+}
+.count{
+    color: black;
+}
+.left{
+    text-align: left;
+}
+.social-media-links svg{
+    fill: #3d3d4e;
+}
+.social-media-links svg path{
+    height: 40px;
+}
+.social-media-links svg:hover{
+    fill: black;
 }
